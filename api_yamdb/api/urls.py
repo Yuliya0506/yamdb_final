@@ -1,14 +1,13 @@
 from django.urls import include, path
 from rest_framework import routers
 from rest_framework_simplejwt.views import TokenRefreshView
-
 from api.views import (
     CategoryViewSet,
-    GenreViewSet,
-    TitleViewSet,
-    CustomTokenObtainPairView,
     CommentViewSet,
+    CustomTokenObtainPairView,
+    GenreViewSet,
     ReviewViewSet,
+    TitleViewSet,
 )
 
 from users.views import (

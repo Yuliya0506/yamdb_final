@@ -1,8 +1,10 @@
 from django.core.management.base import BaseCommand
-import sqlite3
-import pandas as pd
-import os
+
 import logging
+import sqlite3
+import os
+import pandas as pd
+
 from api_yamdb.settings import DICT_TABLE, CSV_DIR
 
 FORMATTER = '%(asctime)s — %(levelname)s — %(message)s'

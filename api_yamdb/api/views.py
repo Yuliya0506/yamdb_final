@@ -1,25 +1,26 @@
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import Avg
-from rest_framework import viewsets, filters
+from rest_framework import filters, viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from reviews.models import Category, Genre, Review, Title, Comment
+from reviews.models import Category, Comment, Genre, Review, Title
 from .mixins import ListCreateDestroyViewSet
 from reviews.filters import TitlesFilter
 from .permissions import (
-    IsAuthorAdminModeratorOrReadOnly,
-    IsAdminOrReadOnly
+    IsAdminOrReadOnly,
+    IsAuthorAdminModeratorOrReadOnly
+
 )
 from .serializers import (
-    CustomTokenObtainPairSerializer,
-    CommentSerializer,
-    ReviewSerializer,
     CategorySerializer,
+    CommentSerializer,
+    CustomTokenObtainPairSerializer,
     GenreSerializer,
-    TitleSerializer,
     ReadOnlyTitleSerializer,
+    ReviewSerializer,
+    TitleSerializer,
 )
 
 
