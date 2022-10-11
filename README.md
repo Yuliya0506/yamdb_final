@@ -1,6 +1,10 @@
 # yamdb_final
 ![workflow](https://github.com/Yuliya0506/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?)
 
+* Server IP:  
+[51.250.83.74](http:// 51.250.83.74/admin)
+
+
 Учебный проект для изучения работы CI CD (Яндекс Практикум)
 
 ## Описание
